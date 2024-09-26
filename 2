@@ -3,21 +3,20 @@ programa
 	
 	funcao inicio()
 	{
-		 real numero, soma = 0, media
-        inteiro contador
-        
-        para (contador = 1; contador <= 5; contador++)
-        {
-            escreva("Digite o ", contador, "º número: ")
-            leia(numero)
-            
-            // Soma dos números
-            soma = soma + numero
-        }
-        
-        media = soma / 5
-        
-        escreva("A soma dos números é: ", soma, "\n")
-        escreva("A média dos números é: ", media, "\n")
+		inteiro soma = 0
+		inteiro media
+		inteiro numero 
+
+		para(inteiro i=0; i < 5; i++){
+			escreva("informe um numero (", i+1, ")")
+			leia(numero)
+
+			soma = soma + numero 
+		}
+
+		media = soma / 5
+		
+		escreva("A soma eh ", soma, "\n")
+		escreva("A media eh ", media) 
 	}
 }
